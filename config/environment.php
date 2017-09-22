@@ -5,6 +5,6 @@
 /*----------------------------------------------------*/
 return [
     'dev' => 'debian',
-    'int' => 'tcdev\.conrad\.pics',
+    'int' => 'kosmos',
     'production' => 'INSERT-HOSTNAME'
 ];
