@@ -4,6 +4,6 @@
 // Define environment type
 /*----------------------------------------------------*/
 return [
-    'local' => 'http://localhost:18080',
+    'dev' => 'debian',
     'production' => 'INSERT-HOSTNAME'
 ];
