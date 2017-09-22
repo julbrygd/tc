@@ -5,6 +5,6 @@
 /*----------------------------------------------------*/
 return [
     'dev' => 'debian',
-    'int' => 'kosmos',
+    'int' => 'kosmos\.metanet\.ch',
     'production' => 'INSERT-HOSTNAME'
 ];
