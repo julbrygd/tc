@@ -4,7 +4,7 @@
 // Define environment type
 /*----------------------------------------------------*/
 return [
-    'dev' => 'debian',
+    'dev' => ['debian', 'stephan-pc'],
     'int' => 'kosmos\.metanet\.ch',
     'production' => 'INSERT-HOSTNAME'
 ];
