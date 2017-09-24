@@ -9,7 +9,7 @@
  *
  */
 
-Route::get('home', function()
-{
-    return view('welcome');
-});
+Route::get('home', "Home@home");
+Route::get('/', "Home@home");
+
+Route::redirect('/login','/cms/wp-login.php');

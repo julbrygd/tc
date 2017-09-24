@@ -1,1 +1,8 @@
 {% extends 'layout/main.twig' %}
+{% block main %}
+    <div class="blog-post">
+        <h2 class="blog-post-title">{{ post.post_title }}</h2>
+
+        {{ post.post_content|raw }}
+    </div><!-- /.blog-post -->
+{% endblock %}

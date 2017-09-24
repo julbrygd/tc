@@ -25,3 +25,6 @@ cs_fixer*
 .env
 .env.*
 !.env.local
+htdocs/content/plugins/wp-bootstrap-navwalker/bin/install-wp-tests.sh
+
+htdocs/content/plugins/wp-bootstrap-navwalker/LICENSE.txt
