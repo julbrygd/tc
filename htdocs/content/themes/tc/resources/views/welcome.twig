@@ -4,5 +4,12 @@
         <h2 class="blog-post-title">{{ post.post_title }}</h2>
 
         {{ post.post_content|raw }}
+
     </div><!-- /.blog-post -->
+    <div class="blog-post">
+        <h2 class="blog-post-title">Neuste Beitr&auml;ge</h2>
+        {% for post in news %}
+            {{ post.post_title }}
+        {% endfor %}
+    </div>
 {% endblock %}

@@ -18,10 +18,17 @@ class Home extends BaseController {
         $startpage = get_option(self::$START_PAGE_KEY);
         $posttype = get_option('show_on_front');
         $post = new Posts(new \WP_Query());
-        return view("welcome", array("post" => $post->find([
+        return view("welcome", array(
+            "post" => $post->find([
                 'p' => $startpage,
                 'post_type' => $posttype
-            ])->first()->get()));
+            ])->first()->get(),
+            "news" => $post->find([
+                'post_type' => 'post',
+                'category__not_in' => array(),
+                'posts_per_page' => 5
+            ])->get()
+        ));
     }
 
 }

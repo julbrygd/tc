@@ -10,5 +10,6 @@ return [
     */
     'Theme\\Controllers\\' => themosis_path('theme.resources').'controllers',
     'Theme\\Models\\' => themosis_path('theme.resources').'models',
-    'Theme\\Providers\\' => themosis_path('theme.resources').'providers'
+    'Theme\\Providers\\' => themosis_path('theme.resources').'providers',
+    'Theme\\TC\\' => themosis_path('theme.resources').'src'
 ];
