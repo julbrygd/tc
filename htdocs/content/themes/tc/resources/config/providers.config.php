@@ -5,5 +5,6 @@
  */
 return [
     Theme\Providers\RoutingService::class,
-    Theme\Providers\TwigExtensionProvider::class
+    Theme\Providers\TwigExtensionProvider::class,
+    Xinax\LaravelGettext\LaravelGettextServiceProvider::class
 ];

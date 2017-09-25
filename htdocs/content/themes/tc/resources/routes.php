@@ -10,6 +10,7 @@
  */
 
 Route::get('home', "Home@home");
-Route::get('/', "Home@home");
+Route::get('front', "Home@home");
+Route::get('single', "Posts@single");
 
 Route::redirect('/login','/cms/wp-login.php');

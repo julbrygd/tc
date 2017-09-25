@@ -19,7 +19,8 @@
   ],
   "autoload": {
     "psr-0": {
-      "Thms": "library"
+      "Thms": "library",
+      "Tc": "htdocs/content/themes/tc/resources/src"
     }
   },
   "config": {
@@ -39,7 +40,8 @@
     "doctrine/dbal": "^2.5",
     "league/flysystem": "^1.0",
     "symfony/process": "^3.3",
-    "wp-bootstrap/wp-bootstrap-navwalker": "^2.0"
+    "wp-bootstrap/wp-bootstrap-navwalker": "^2.0",
+    "xinax/laravel-gettext": "^4.0"
   },
   "require-dev": {
     "phpunit/phpunit": "5.3.*"

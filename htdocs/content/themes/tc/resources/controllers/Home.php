@@ -25,7 +25,7 @@ class Home extends BaseController {
             ])->first()->get(),
             "news" => $post->find([
                 'post_type' => 'post',
-                'category__not_in' => array(),
+                'tag' => 'news',
                 'posts_per_page' => 5
             ])->get()
         ));

@@ -9,7 +9,9 @@
     <div class="blog-post">
         <h2 class="blog-post-title">Neuste Beitr&auml;ge</h2>
         {% for post in news %}
-            {{ post.post_title }}
+            <p>
+                <a href="{{ wp.get_permalink(post) }}">{{ post.post_title }}</a>
+            </p>
         {% endfor %}
     </div>
 {% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'layout/main.twig' %}
+{% block main %}
+    <article>
+        <h2>{{ post.post_title|title }}</h2>
+        <p class="blog-post-meta">{{ post.post_date }} {{ fn.__('by', text_domain) }} {{ fn.get_userdata(post.post_author).display_name }}</p>
+        <div>{{ wpautop(post.post_content)|raw }}</div>
+    </article>
+        
+{% endblock %}
